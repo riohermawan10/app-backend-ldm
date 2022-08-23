@@ -10,9 +10,9 @@ const doc = {
     title: "LDM API",
     description: "Backend of application LDM."
   },
-  host: "localhost:5500",
+  host: "https://app-backend-ldm.herokuapp.com/",
   basePath: "/",
-  schemes: ['http','https'],
+  schemes: ['https'],
   consumes: ['application/json'],
   produces: ['application/json'],
   tags: [
