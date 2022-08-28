@@ -1235,7 +1235,7 @@ exports.updateProduct = async (req, res) => {
     }
 
     if(jumlah > parseInt(findProduct.stock)) {
-      return res.status(422).json(response.found(`Jumlah product melampaui stock`));
+      return res.status(422).json(response.found(`Jumlah product melampaui stock (edit)`));
     }
 
     let stockData = 0;
