@@ -1066,11 +1066,10 @@ exports.addProduct = async (req, res) => {
       return res.status(404).json(response.nodeFound(`Products ${message.notFound}`));
     }
 
-    if(jumlah > parseInt(product.jumlah)) {
-    if(jumlah > parseInt(product.stock))  {
+    if(jumlah > parseInt(product.jumlah))  {
       return res.status(422).json(response.found(`Jumlah product melampaui stock`));
     }
-  }
+  
 
     const productResult = {
       productId: product.getId(),
